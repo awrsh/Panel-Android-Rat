@@ -1,0 +1,28 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    body{
+        @apply bg-[#222222]
+    }
+}
+
+*::-webkit-scrollbar{
+  width: 6px;
+}
+*::-webkit-scrollbar-thumb{
+  background-color: #cfcfcf;
+}
+*::-webkit-scrollbar-track{
+  background-color: #f7f7f7;
+}
+
+.MuiPagination-root ul li button{
+@apply !bg-gray-500
+}
+.MuiPagination-root ul li button.Mui-selected{
+@apply !bg-green-500
+}
